@@ -1,0 +1,23 @@
+📄 Code with comments
+<!-- Video element with multiple attributes -->
+<video
+  src="movie.mp4"               <!-- Direct video file URL (optional if using <source> below) -->
+  width="640"                   <!-- Width of video player in pixels -->
+  height="360"                  <!-- Height of video player in pixels -->
+  controls                      <!-- Show default play/pause/volume controls -->
+  autoplay                      <!-- Start playing automatically when the page loads -->
+  muted                         <!-- Start muted (required for autoplay to work in most browsers) -->
+  loop                          <!-- Replay the video continuously -->
+  poster="thumbnail.jpg"         <!-- Show this image before the video starts playing -->
+  preload="metadata"             <!-- Only preload metadata (duration, dimensions), not the full video -->
+  playsinline                   <!-- On mobile, play video inline instead of fullscreen -->
+  controlslist="nodownload noremoteplayback"  <!-- Remove download & remote playback options from controls -->
+  disablepictureinpicture        <!-- Disable Picture-in-Picture mode -->
+>
+  <!-- Different video sources for browser compatibility -->
+  <source src="movie.mp4" type="video/mp4">    <!-- MP4 version of the video -->
+  <source src="movie.webm" type="video/webm">  <!-- WebM version of the video -->
+
+  <!-- This message appears if the browser does not support the video tag -->
+  Your browser does not support the video tag.
+</video>
