@@ -1,0 +1,5 @@
+1. String --> "Hello", "world", "A", "CDEF"
+2. Number --> 1, 2, 34, 56.7, 89,
+3. Boolean --> True, False
+4. Array --> [1,2,3], [5,4,3,6,7], [7,4,3,5]
+5. Object --> {name: "vishal"}

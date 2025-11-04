@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    .header {
+      grid-area: header;
+      background: #3498db;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background: #2ecc71;
+      padding: 20px;
+      color: white;
+    }
+
+    .content {
+      grid-area: content;
+      padding: 20px;
+    }
+
+    .footer {
+      grid-area: footer;
+      background: #9b59b6;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="header">
+      <div>MAANC</div>
+      <div>Menu</div>
+    </div>
+    <div class="sidebar">Sidebar Links</div>
+    <div class="content">
+      <h2>MAANC INFOTECH PVT LTD</h2>
+      <p>
+        At <strong>MAANC Infotech Pvt Ltd</strong>, we provide top-quality training in the latest and most demanding technologies in the industry.
+        Our goal is to empower students and professionals with hands-on knowledge in fields like Artificial Intelligence, Machine Learning, Data Science,
+        Full Stack Development, Cloud Computing, IoT, and Robotics.  
+      </p>
+    </div>
+    <div class="footer">© 2025 All rights reserved</div>
+  </div>
+
+</body>
+</html>

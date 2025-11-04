@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title> web </title>
+        <style>
+            .boxes{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                grid-template-rows: 80px 1fr 80px;
+                grid-template-areas: "header header" "sidebar main" "footer footer";
+                gap:20px;
+                height: 100vh;
+            }
+            .box{
+                background-color: lightgreen;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .header{
+                background-color: blue;
+                grid-area: header;
+            }
+            .sidebar{
+                background-color: rgb(123, 245, 125);
+                grid-area: sidebar;
+            }
+            .main{
+                background-color: rgb(227, 227, 235);
+                grid-area: main;
+            }
+            .footer{
+                background-color: rgb(102, 102, 102);
+                grid-area: footer;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="boxes"> 
+            <div class="box header"> Header </div>
+            <div class="box sidebar"> Sidebar </div>
+            <div class="box main"> Main Content </div>
+            <div class="box footer"> Footer </div>
+        </div>
+    </body>
+</html>

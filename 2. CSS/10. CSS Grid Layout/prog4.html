@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> web </title>
+        <style>
+            .boxes{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                grid-template-rows: 80px 1fr 80px;
+                gap:20px;
+                height: 100vh;
+            }
+            .box{
+                background-color: lightgreen;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .header{
+                grid-column: span 2;
+            }
+            .footer{
+                grid-column: span 2;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="boxes"> 
+            <div class="box header"> Header </div>
+            <div class="box sidebar"> Sidebar </div>
+            <div class="box main"> Main Content </div>
+            <div class="box footer"> Footer </div>
+        </div>
+    </body>
+</html>
