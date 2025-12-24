@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App with jQuery AJAX</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h2>Weather Info</h2>
+  <input type="text" id="city" placeholder="Enter City">
+  <button id="getWeather">Get Weather</button>
+  <div id="result"></div>
+
+  <script>
+    $(document).ready(function(){
+      $("#getWeather").click(function(){
+        var city = $("#city").val();
+        var url = "https://wttr.in/" + city + "?format=%C+%t"; // free weather API
+        $.get(url, function(data){
+          $("#result").html("<h3>Weather: " + data + "</h3>");
+        });
+      });
+    });
+  </script>
+</body>
+</html>

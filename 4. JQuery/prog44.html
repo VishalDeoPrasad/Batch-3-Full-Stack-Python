@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>web</title>
+        <style>
+            div, ul, li { padding: 10px;
+                border: 1px solid green;
+            }
+        </style>
+    </head>
+    <body>  
+        <div>
+            <ul>
+                <li> Apple </li>
+                <li> Orange </li>
+                <li> Kiwi </li>
+                <li> Mango </li>
+                <li> Banana </li>
+                <li> Grapes </li>
+            </ul>
+        </div>
+        <script src="jquery-3.7.1.min.js"></script>
+        <script>
+            $('li').filter("li:contains('a')").css("background", "aqua");
+        </script>
+    </body>
+</html>

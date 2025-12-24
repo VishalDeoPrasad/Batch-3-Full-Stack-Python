@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> web </title>
+        <style>
+            #box{
+                width: 100px;
+                height: 100px;
+                background: orange;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn"> Click</button> <br> <br>
+        <img id="box" src="image.png"></img>
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script>
+            $('#btn').click(function() {
+                $('#box').animate({
+                    height: '200px',
+                    width: '200px',
+                    left: '300px',
+                    top: '200px'
+                }, 2000)
+            })
+        </script>
+    </body>
+</html>

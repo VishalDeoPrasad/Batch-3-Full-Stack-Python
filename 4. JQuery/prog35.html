@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> web</title>
+    </head>
+    <body>
+        <ul id="list">
+            <li> Apple </li>
+            <li> Mango </li>
+            <li> Orange </li>
+        </ul>
+        <button id="btn"> click </button>
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script> 
+            $('#btn').click(function() {
+                $('#list').prepend('<li> Banana </li>');
+            })
+        </script>
+    </body>
+</html>

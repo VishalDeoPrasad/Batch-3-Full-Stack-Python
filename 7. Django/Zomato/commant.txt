@@ -1,0 +1,15 @@
+# Create a Django project
+python -m django startproject Zomato
+
+# Change Dir
+cd Zomato
+
+# Create a Django app
+python manage.py startapp home
+
+# Database
+python manage.py makemigrations
+python manage.py migrate
+
+# Create Super User to access the Admin Panel
+python manage.py createsuperuser

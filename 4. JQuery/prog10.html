@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>erb </title>
+    </head>
+    <body>
+        Name: <input type="text" id="name">
+        <p id="output"> </p>
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script> 
+            $('#name').keypress(function(){
+                $('#output').text("Typing...");
+            });
+        </script>
+    </body>
+</html>

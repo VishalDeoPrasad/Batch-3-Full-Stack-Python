@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title> contact </title>
+        <style>
+        body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-top: 50px;
+            }
+        form {
+                display: inline-block;         /* Sit next to each other on the same line.*/
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+                width: 300px;
+            }
+            input, textarea {
+                display: block;
+                margin: 10px auto;
+                padding: 8px;
+                width: 90%;
+            }
+            button {
+                padding: 10px;
+                background-color: green;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2> Contact Us </h2>
+        <form method="post">
+            {% csrf_token %}
+            <input name="name" type="text" placeholder="Your Name">
+            <input name="mobile" type="text" placeholder="Your Mobile">
+            <input name="email" type="email" placeholder="Your Email">
+            <textarea name="description" placeholder="Your Message"></textarea>
+            <button type="submit"> Submit </button>
+        </form>
+    </body>
+</html>

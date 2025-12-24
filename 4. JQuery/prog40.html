@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>web</title>
+        <style>
+            div, p{ padding: 10px;
+                border: 1px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>
+                <div>
+                    <p id="p"> Manac Infotech Pvt Ltd </p>
+                </div>
+            </div>
+        </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $('#p').parent().parent().parent().css('border', "1px solid red");
+    </script>
+    </body>
+</html>

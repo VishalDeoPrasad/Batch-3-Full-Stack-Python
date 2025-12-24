@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                background: red;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn"> Click </button>
+        <div></div>
+        <script src="jquery-3.7.1.min.js"></script>
+        <script>
+            $('#btn').click(function(){
+                $('div').fadeOut(3000, function(){
+                    alert("Fade Out Completed");
+                });
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> Web </title>
+        <style>
+            h2{
+                background: #f0f0f0;
+                padding: 10px;
+                cursor: pointer;
+            }
+            p{
+                background: rgb(216, 250, 216);
+                border-left: 4px solid rgb(123, 237, 123);
+                padding: 10px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Manac Infotech Pvt Ltd - FAQ</h1>
+
+        <h2> 1. What do you Teach? </h2>
+        <p> We teach HTML, CSS, JavaScript, Django, Python, Machine Learning & More...</p>
+
+        <h2>2. How can I join?</h2>
+        <p>You can join by registering on our official website.</p>
+
+        <h2>3. Do you provide certificates?</h2>
+        <p>Yes, we provide certificates after course completion.</p>
+
+        <h2>4. Can beginners learn here?</h2>
+        <p>Of course! Our courses start from basics and move to advanced topics.</p>
+
+        <h2>5. Do you offer online classes?</h2>
+        <p>Yes, we provide both online and offline learning options.</p>
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script>
+            $('h2').click(function(){
+                $(this).next('p').slideToggle();
+            })
+        </script>
+
+    </body>
+</htm

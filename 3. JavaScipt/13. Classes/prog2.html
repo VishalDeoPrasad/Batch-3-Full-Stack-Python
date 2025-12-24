@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> web </title>
+    </head>
+    <body>
+        <script>
+            class Student {
+                constructor(name, age, grade, roll_no, study){
+                    this.name = name;
+                    this.age = age;
+                    this.grade = grade;
+                    this.roll_no = roll_no;
+                    this.study = study
+                }
+                study_hours(){
+                    console.log("Study Hours:",this.study);
+                }
+
+                show_grade(){
+                    console.log("Grade: ", this.grade);
+                }
+
+                show_info(){
+                    console.log("Name: ", this.name);
+                    console.log("Age: ", this.age);
+                    console.log("Roll_no: ", this.roll_no);
+                    console.log("Grade: ", this.grade);
+                    console.log("Study Hours: ", this.study)
+                }
+            }
+            const s1 = new Student("Vishal", 30,"A", 101, 10);
+            s1.show_info();
+        </script>
+    </body>
+</html>

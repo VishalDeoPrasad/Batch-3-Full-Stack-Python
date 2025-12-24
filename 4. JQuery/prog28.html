@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> we </title>
+        <style>
+            #box{
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <img id=img src="image1.png">
+            <img id=img src="image2.png">
+        </div>
+        
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script>
+            $('#box')
+                .animate({ left: '800px'}, 500)
+                .animate({ top: '400px'}, 500)
+                .animate({ left: '0px'}, 500)
+                .animate({ top: '0px'}, 500)
+        </script>
+    </body>
+</html>

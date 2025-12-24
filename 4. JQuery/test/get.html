@@ -1,0 +1,21 @@
+<html>
+    <head> 
+        <title> web </title>
+    </head>
+    <body>
+        <h1>News Updates</h1>
+        <button id="loadBtn">Load Latest News</button>
+        <div id="news"></div>
+        <script src="jquery-3.7.1.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("#loadBtn").click(function(){
+            $.get("https://jsonplaceholder.typicode.com/posts/1", function(data){
+                $("#news").html("<h3>" + data.title + "</h3><p>" + data.body + "</p>");
+            });
+            });
+        });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitHub User Finder</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h2>GitHub User Search</h2>
+  <input type="text" id="username" placeholder="Enter GitHub Username">
+  <button id="searchBtn">Search</button>
+  <div id="profile"></div>
+
+  <script>
+    $(document).ready(function(){
+      $("#searchBtn").click(function(){
+        var user = $("#username").val();
+        $.getJSON("https://api.github.com/users/" + user, function(data){
+          $("#profile").html(
+            "<img src='" + data.avatar_url + "' width='100'><br>" +
+            "<strong>Name:</strong> " + data.name + "<br>" +
+            "<strong>Followers:</strong> " + data.followers + "<br>" +
+            "<strong>Public Repos:</strong> " + data.public_repos
+          );
+        }).fail(function(){
+          $("#profile").html("<p style='color:red;'>User not found!</p>");
+        });
+      });
+    });
+  </script>
+</body>
+</html>

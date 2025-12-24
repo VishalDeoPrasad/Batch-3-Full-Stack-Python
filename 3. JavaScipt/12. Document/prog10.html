@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title> web </title>
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <img id=bulb src="off_bulb.png" width="250">  <br> <br>
+        <button onclick="bulbON()"> Turn ON</button>
+        <button onclick="bulbOFF()"> Turn OFF </button>
+        <script>
+            function bulbON(){
+                document.getElementById('bulb').src = "on_bulb.png";
+            }
+            function bulbOFF(){
+                document.getElementById('bulb').src = "off_bulb.png";
+            }
+        </script>
+    </body>
+</html>

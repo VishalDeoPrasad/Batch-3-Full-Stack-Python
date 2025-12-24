@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Users</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h2>User List</h2>
+  <button id="getUsers">Load Users</button>
+  <ul id="userList"></ul>
+
+  <script>
+    $(document).ready(function(){
+      $("#getUsers").click(function(){
+        $.getJSON("https://jsonplaceholder.typicode.com/users", function(data){
+          $("#userList").empty();
+          $.each(data, function(index, user){
+            $("#userList").append("<li>" + user.name + " - " + user.email + "</li>");
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

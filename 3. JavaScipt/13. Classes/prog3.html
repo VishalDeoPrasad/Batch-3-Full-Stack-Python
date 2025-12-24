@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>wb</title>
+    </head>
+    <body>
+        <script>
+            class Animal{
+                constructor(name){
+                    this.name = name;
+                }
+                speak(){
+                    console.log("This is from my Animal Class!");
+                }
+            }
+
+            class Dog extends Animal{
+                walk(){
+                    console.log("This is from my Dog Class");
+                }
+            }
+
+            const dog = new Dog("Tom");
+            dog.speak();
+            dog.walk();
+        </script>
+    </body>
+</html>

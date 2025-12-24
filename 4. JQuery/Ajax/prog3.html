@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> web </title>
+    </head>
+    <body>
+        <h2> Github User Search </h2>
+        <input type="text" id="username"> 
+        <button id="btn"> Search </button>
+        <div id="box"> </div>
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script>
+            $('#btn').click(function(){
+                let user = $('#username').val();
+                $.getJSON("https://api.github.com/users/"+user, function(data){
+                    $('#box').html(
+                        "<img src='" + data.avatar_url + "'>" +
+                        "<h2>" + data.name + "</h2>" +
+                        "<p>" + data.followers + "</p>"
+                    )
+                })
+            })
+        </script>
+    </body>
+</html>

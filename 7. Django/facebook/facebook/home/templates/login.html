@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> Login Page </title>
+        <style>
+            body{
+                text-align: center;
+            }
+            form{
+                display: inline-block;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+            }
+            input{
+                display: block;
+                padding: 10px;
+                margin: 10px;
+            }
+            button{
+                background-color: blue;
+                color: white;
+                padding: 7px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2> Login </h2>
+        <form method="post">
+            {% csrf_token %}
+            <input name="username" type="text" placeholder="Enter Username">
+            <input name="password" type="password" placeholder="Enter Password">
+            <button type="submit"> Sign In </button>
+        </form>
+    </body>
+</html>

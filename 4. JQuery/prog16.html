@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>web</title>
+    </head>
+    <body>
+        <h1>Manac Infotech Pvt Ltd</h1>
+        <button id="btn"> Click ME</button>
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script>
+            $('#btn').on(
+            {
+                click: function(){ $('h1').hide(); },
+                
+                dblclick: function() { $('h1').hide(); }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>web </title>
+    </head>
+    <body>
+        <img id="image" src="image1.png" width="300"> <br><br>
+        <button id="btn"> Click </button>
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script> 
+            $('#btn').click(function(){
+                $('#image').attr('src', 'image2.png');
+            })
+        </script>
+    </body>
+</html>

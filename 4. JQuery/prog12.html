@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> Web </title>
+    </head>
+    <body>
+        <input id="name" type="text" placeholder="Enter Your Name:"> 
+        <script src="jquery-3.7.1.min.js"></script>
+        <script>
+            $('#name').focus(function(){
+                $('#name').css("background-color","lightgreen");
+            });
+
+            $('#name').blur(function(){
+                $('#name').css("background-color","red");
+            });
+        </script>
+    </body>
+</html>
